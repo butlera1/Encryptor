@@ -25,9 +25,9 @@ public class Main {
 
   public static void main(String[] args) {
     if (args.length == 1){
-      String pw = args[0];
-      String result = getEncryptedPassword(pw);
-      System.out.println("Encrypted ("+pw+"): "+result);
+      String password = args[0];
+      String encryptedPassword = getEncryptedPassword(password);
+      System.out.println("Encrypted ("+password+"): "+encryptedPassword);
     }else{
       System.out.println("Call with just the password to encrypt.");
     }
